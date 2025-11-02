@@ -1,0 +1,9 @@
+[submodule "ScalableMssqlApi"]
+	path = ScalableMssqlApi
+	url = https://github.com/Jeremy-Bradford-SR/ScalableMssqlApi.git
+[submodule "p2cfrontend"]
+	path = p2cfrontend
+	url = https://github.com/Jeremy-Bradford-SR/p2cfrontend.git
+[submodule "p2cproxy"]
+	path = p2cproxy
+	url = https://github.com/Jeremy-Bradford-SR/p2cproxy.git

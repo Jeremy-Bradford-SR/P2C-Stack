@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  p2cfrontend:
+    build:
+      context: ./p2cfrontend
+      dockerfile: Dockerfile
+    ports:
+      - "8004:80"
+    depends_on:
+      - p2cproxy
+
+  p2cproxy:
+    build:
+      context: ./p2cproxy
+      dockerfile: Dockerfile
+    env_file:
+      - .env-frontend
+    ports:
+      - "9000:9000"
+
+  p2capi:
+    build:
+      context: ./ScalableMssqlApi
+      dockerfile: Dockerfile
+    env_file:
+      - .env-db
+    ports:
+      - "8083:8083"
