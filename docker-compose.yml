@@ -1,8 +1,10 @@
+version: "3.9"
 services:
   p2cfrontend:
     build:
       context: ./p2cfrontend
       dockerfile: Dockerfile
+    image: docker.io/jeremybradfordsr1/p2cfrontend:latest
     env_file:
       - .env-frontend
     ports:
@@ -14,6 +16,7 @@ services:
     build:
       context: ./p2cproxy
       dockerfile: Dockerfile
+    image: docker.io/jeremybradfordsr1/p2cproxy:latest
     env_file:
       - .env-proxy
     ports:
@@ -23,6 +26,7 @@ services:
     build:
       context: ./ScalableMssqlApi
       dockerfile: Dockerfile
+    image: docker.io/jeremybradfordsr1/p2capi:latest
     env_file:
       - .env-db
     ports:
