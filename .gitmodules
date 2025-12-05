@@ -7,3 +7,6 @@
 [submodule "p2cproxy"]
 	path = p2cproxy
 	url = https://github.com/Jeremy-Bradford-SR/p2cproxy.git
+[submodule "P2CScripts"]
+	path = P2CScripts
+	url = https://github.com/Jeremy-Bradford-SR/P2CScripts.git
