@@ -1,0 +1,202 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 578B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 426B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:8.0
+#3 DONE 0.1s
+
+#4 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:8.0
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 75B done
+#5 DONE 0.0s
+
+#6 [build 1/6] FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:1682f3cd0cb51464568de4fa88c719bd3be55539653d97540718bdd5b87062d4
+#6 DONE 0.0s
+
+#7 [final 1/3] FROM mcr.microsoft.com/dotnet/aspnet:8.0@sha256:0d4a76c0a692c7419acf59529ba6dae8552f4fd59e8453538b5291710a29fb9d
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 894B done
+#8 DONE 0.0s
+
+#9 [build 3/6] COPY ScalableMssqlApi.csproj ./
+#9 CACHED
+
+#10 [build 2/6] WORKDIR /src
+#10 CACHED
+
+#11 [build 4/6] RUN dotnet restore ScalableMssqlApi.csproj
+#11 CACHED
+
+#12 [build 5/6] COPY . .
+#12 CACHED
+
+#13 [build 6/6] RUN dotnet publish ScalableMssqlApi.csproj -c Release -o /app/publish
+#13 0.859   Determining projects to restore...
+#13 1.141   All projects are up-to-date for restore.
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(5,23): warning CS8618: Non-nullable property 'invid' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(6,23): warning CS8618: Non-nullable property 'key' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(7,23): warning CS8618: Non-nullable property 'location' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(8,23): warning CS8618: Non-nullable property 'id' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(9,23): warning CS8618: Non-nullable property 'name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(10,23): warning CS8618: Non-nullable property 'crime' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(11,23): warning CS8618: Non-nullable property 'time' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(12,23): warning CS8618: Non-nullable property 'property' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(13,23): warning CS8618: Non-nullable property 'officer' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(14,23): warning CS8618: Non-nullable property 'case' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(15,23): warning CS8618: Non-nullable property 'description' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(16,23): warning CS8618: Non-nullable property 'race' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(17,23): warning CS8618: Non-nullable property 'sex' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(18,23): warning CS8618: Non-nullable property 'lastname' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(19,23): warning CS8618: Non-nullable property 'firstname' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(20,23): warning CS8618: Non-nullable property 'charge' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/DTOs/DailyBulletinDto.cs(21,23): warning CS8618: Non-nullable property 'middlename' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/DataController.cs(921,23): warning CS8618: Non-nullable property 'Table' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/DataController.cs(922,43): warning CS8618: Non-nullable property 'Data' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Middleware/ApiKeyMiddleware.cs(17,23): warning CS8601: Possible null reference assignment. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Middleware/ApiKeyMiddleware.cs(13,16): warning CS8618: Non-nullable field '_apiKey' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/ToolsController.cs(16,33): warning CS8601: Possible null reference assignment. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/ToolsController.cs(14,16): warning CS8618: Non-nullable field '_connectionString' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(23,33): warning CS8601: Possible null reference assignment. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(21,16): warning CS8618: Non-nullable field '_connectionString' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Services/IngestionService.cs(25,33): warning CS8601: Possible null reference assignment. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Services/IngestionService.cs(23,16): warning CS8618: Non-nullable field '_connectionString' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(50,27): warning CS8618: Non-nullable property 'charge_description' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(51,27): warning CS8618: Non-nullable property 'status' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(52,27): warning CS8618: Non-nullable property 'docket_number' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(53,27): warning CS8618: Non-nullable property 'bond_amount' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(54,27): warning CS8618: Non-nullable property 'disp_charge' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/ToolsController.cs(22,27): warning CS8618: Non-nullable property 'Table' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(30,27): warning CS8618: Non-nullable property 'book_id' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(31,27): warning CS8618: Non-nullable property 'invid' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(32,27): warning CS8618: Non-nullable property 'firstname' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.993 /src/Controllers/IngestionController.cs(33,27): warning CS8618: Non-nullable property 'lastname' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(34,27): warning CS8618: Non-nullable property 'middlename' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(35,27): warning CS8618: Non-nullable property 'disp_name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(38,27): warning CS8618: Non-nullable property 'sex' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(39,27): warning CS8618: Non-nullable property 'race' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(41,27): warning CS8618: Non-nullable property 'agency' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(42,27): warning CS8618: Non-nullable property 'disp_agency' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(43,27): warning CS8618: Non-nullable property 'total_bond_amount' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(45,27): warning CS8618: Non-nullable property 'photo_data' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(46,40): warning CS8618: Non-nullable property 'charges' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(31,34): error CS1069: The type name 'SqlConnection' could not be found in the namespace 'System.Data.SqlClient'. This type has been forwarded to assembly 'System.Data.SqlClient, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' Consider adding a reference to that assembly. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(49,27): warning CS8618: Non-nullable property 'Id' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(50,27): warning CS8618: Non-nullable property 'Address' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(57,34): error CS1069: The type name 'SqlConnection' could not be found in the namespace 'System.Data.SqlClient'. This type has been forwarded to assembly 'System.Data.SqlClient, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' Consider adding a reference to that assembly. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(77,33): warning CS8618: Non-nullable property 'Ids' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(78,27): warning CS8618: Non-nullable property 'Table' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(88,35): error CS1069: The type name 'SqlConnection' could not be found in the namespace 'System.Data.SqlClient'. This type has been forwarded to assembly 'System.Data.SqlClient, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' Consider adding a reference to that assembly. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(102,27): warning CS8618: Non-nullable property 'Id' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(105,27): warning CS8618: Non-nullable property 'Table' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(113,34): error CS1069: The type name 'SqlConnection' could not be found in the namespace 'System.Data.SqlClient'. This type has been forwarded to assembly 'System.Data.SqlClient, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' Consider adding a reference to that assembly. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(143,27): warning CS8618: Non-nullable property 'Id' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(144,27): warning CS8618: Non-nullable property 'TimeText' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(150,34): error CS1069: The type name 'SqlConnection' could not be found in the namespace 'System.Data.SqlClient'. This type has been forwarded to assembly 'System.Data.SqlClient, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' Consider adding a reference to that assembly. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(158,33): warning CS8618: Non-nullable property 'Ids' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(164,35): error CS1069: The type name 'SqlConnection' could not be found in the namespace 'System.Data.SqlClient'. This type has been forwarded to assembly 'System.Data.SqlClient, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' Consider adding a reference to that assembly. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(170,27): warning CS8618: Non-nullable property 'Id' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/ToolsController.cs(178,34): error CS1069: The type name 'SqlConnection' could not be found in the namespace 'System.Data.SqlClient'. This type has been forwarded to assembly 'System.Data.SqlClient, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' Consider adding a reference to that assembly. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(179,27): warning CS8618: Non-nullable property 'id' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(180,27): warning CS8618: Non-nullable property 'invid' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(183,27): warning CS8618: Non-nullable property 'agency' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(184,27): warning CS8618: Non-nullable property 'service' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(185,27): warning CS8618: Non-nullable property 'nature' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(186,27): warning CS8618: Non-nullable property 'address' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(189,27): warning CS8618: Non-nullable property 'marker_details_xml' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(190,27): warning CS8618: Non-nullable property 'rec_key' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(191,27): warning CS8618: Non-nullable property 'icon_url' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.994 /src/Controllers/IngestionController.cs(192,27): warning CS8618: Non-nullable property 'icon' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(389,27): warning CS8618: Non-nullable property 'SupervisionStatus' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(390,27): warning CS8618: Non-nullable property 'OffenseClass' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(391,27): warning CS8618: Non-nullable property 'CountyOfCommitment' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(374,27): warning CS8618: Non-nullable property 'OffenderNumber' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(375,27): warning CS8618: Non-nullable property 'Location' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(376,27): warning CS8618: Non-nullable property 'Offense' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(380,27): warning CS8618: Non-nullable property 'InterviewDate' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(381,27): warning CS8618: Non-nullable property 'MandatoryMinimum' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(382,27): warning CS8618: Non-nullable property 'DecisionType' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(383,27): warning CS8618: Non-nullable property 'Decision' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(386,39): warning CS8618: Non-nullable property 'Charges' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(368,27): warning CS8618: Non-nullable property 'OffenderNumber' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(369,27): warning CS8618: Non-nullable property 'Name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(370,27): warning CS8618: Non-nullable property 'Gender' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(371,27): warning CS8618: Non-nullable property 'Age' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(277,28): warning CS8618: Non-nullable property 'last_name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(278,28): warning CS8618: Non-nullable property 'first_name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(279,28): warning CS8618: Non-nullable property 'middle_name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(273,28): warning CS8618: Non-nullable property 'gender' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(274,28): warning CS8618: Non-nullable property 'age_group' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(268,28): warning CS8618: Non-nullable property 'conviction_text' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(269,28): warning CS8618: Non-nullable property 'registrant_age' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(270,39): warning CS8618: Non-nullable property 'victims' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(233,28): warning CS8618: Non-nullable property 'registrant_id' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(234,28): warning CS8618: Non-nullable property 'oci' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(235,28): warning CS8618: Non-nullable property 'last_name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(236,28): warning CS8618: Non-nullable property 'first_name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(237,28): warning CS8618: Non-nullable property 'middle_name' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(238,28): warning CS8618: Non-nullable property 'gender' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(239,28): warning CS8618: Non-nullable property 'tier' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(240,28): warning CS8618: Non-nullable property 'race' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(241,28): warning CS8618: Non-nullable property 'hair_color' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(242,28): warning CS8618: Non-nullable property 'eye_color' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(243,28): warning CS8618: Non-nullable property 'height_inches' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(244,28): warning CS8618: Non-nullable property 'weight_pounds' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(245,28): warning CS8618: Non-nullable property 'address_line_1' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(246,28): warning CS8618: Non-nullable property 'address_line_2' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(247,28): warning CS8618: Non-nullable property 'city' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(248,28): warning CS8618: Non-nullable property 'state' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(249,28): warning CS8618: Non-nullable property 'postal_code' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(250,28): warning CS8618: Non-nullable property 'county' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(251,28): warning CS8618: Non-nullable property 'lat' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(252,28): warning CS8618: Non-nullable property 'lon' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(257,28): warning CS8618: Non-nullable property 'registrant_cluster' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(258,28): warning CS8618: Non-nullable property 'photo_url' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.995 /src/Controllers/IngestionController.cs(261,28): warning CS8618: Non-nullable property 'photo_data' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.996 /src/Controllers/IngestionController.cs(262,43): warning CS8618: Non-nullable property 'conviction_list' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.996 /src/Controllers/IngestionController.cs(263,38): warning CS8618: Non-nullable property 'alias_list' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.996 /src/Controllers/IngestionController.cs(264,34): warning CS8618: Non-nullable property 'markings' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+#13 2.996 /src/Controllers/DataController.cs(766,32): warning CS8600: Converting null literal or possible null value to non-nullable type. [/src/ScalableMssqlApi.csproj]
+#13 ERROR: process "/bin/sh -c dotnet publish ScalableMssqlApi.csproj -c Release -o /app/publish" did not complete successfully: exit code: 1
+------
+ > [build 6/6] RUN dotnet publish ScalableMssqlApi.csproj -c Release -o /app/publish:
+2.995 /src/Controllers/IngestionController.cs(250,28): warning CS8618: Non-nullable property 'county' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.995 /src/Controllers/IngestionController.cs(251,28): warning CS8618: Non-nullable property 'lat' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.995 /src/Controllers/IngestionController.cs(252,28): warning CS8618: Non-nullable property 'lon' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.995 /src/Controllers/IngestionController.cs(257,28): warning CS8618: Non-nullable property 'registrant_cluster' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.995 /src/Controllers/IngestionController.cs(258,28): warning CS8618: Non-nullable property 'photo_url' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.995 /src/Controllers/IngestionController.cs(261,28): warning CS8618: Non-nullable property 'photo_data' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.996 /src/Controllers/IngestionController.cs(262,43): warning CS8618: Non-nullable property 'conviction_list' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.996 /src/Controllers/IngestionController.cs(263,38): warning CS8618: Non-nullable property 'alias_list' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.996 /src/Controllers/IngestionController.cs(264,34): warning CS8618: Non-nullable property 'markings' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable. [/src/ScalableMssqlApi.csproj]
+2.996 /src/Controllers/DataController.cs(766,32): warning CS8600: Converting null literal or possible null value to non-nullable type. [/src/ScalableMssqlApi.csproj]
+------
+Dockerfile:7
+
+--------------------
+
+   5 |     RUN dotnet restore ScalableMssqlApi.csproj
+
+   6 |     COPY . .
+
+   7 | >>> RUN dotnet publish ScalableMssqlApi.csproj -c Release -o /app/publish
+
+   8 |     
+
+   9 |     # Runtime stage
+
+--------------------
+
+failed to solve: process "/bin/sh -c dotnet publish ScalableMssqlApi.csproj -c Release -o /app/publish" did not complete successfully: exit code: 1
+
+
+
+View build details: docker-desktop://dashboard/build/default/default/s1r49s5mx0pmjls8ad2rbgz05
+
