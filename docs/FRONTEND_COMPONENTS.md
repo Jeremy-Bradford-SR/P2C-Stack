@@ -4,6 +4,8 @@ This document describes the key React components and utilities in the `p2cfronte
 
 ## Core Components
 
+> **Performance Note**: For a detailed analysis of the frontend's performance characteristics, see [P2C_FRONTEND_EVALUATION.md](./P2C_FRONTEND_EVALUATION.md).
+
 ### `App.jsx`
 The main application container.
 - **Responsibilities**:

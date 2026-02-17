@@ -8,6 +8,8 @@ services:
       - .env-frontend
     ports:
       - "8004:80"
+    environment:
+      - TZ=America/Chicago
     depends_on:
       - p2cproxy
 
@@ -20,6 +22,8 @@ services:
       - .env-proxy
     ports:
       - "9000:9000"
+    environment:
+      - TZ=America/Chicago
 
   p2capi:
     build:
@@ -30,6 +34,8 @@ services:
       - .env-db
     ports:
       - "8083:8080"
+    environment:
+      - TZ=America/Chicago
 
   orchestrator:
     build:
@@ -40,3 +46,11 @@ services:
       - "8005:8005"
     env_file:
       - .env-scripts
+    environment:
+      - ORCHESTRATOR_DB_PATH=/data/orchestrator.db
+      - TZ=America/Chicago
+    volumes:
+      - orchestrator_db:/data
+
+volumes:
+  orchestrator_db:
