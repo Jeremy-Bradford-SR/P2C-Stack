@@ -10,6 +10,7 @@ services:
       - "8004:80"
     environment:
       - TZ=America/Chicago
+    restart: always
     depends_on:
       - p2cproxy
 
@@ -24,6 +25,7 @@ services:
       - "9000:9000"
     environment:
       - TZ=America/Chicago
+    restart: always
 
   p2capi:
     build:
@@ -36,6 +38,7 @@ services:
       - "8083:8080"
     environment:
       - TZ=America/Chicago
+    restart: always
 
   orchestrator:
     build:
@@ -49,6 +52,7 @@ services:
     environment:
       - ORCHESTRATOR_DB_PATH=/data/orchestrator.db
       - TZ=America/Chicago
+    restart: always
     volumes:
       - orchestrator_db:/data
 
