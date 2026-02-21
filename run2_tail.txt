@@ -1,9 +1,0 @@
-2026-02-13 23:07:03,661 [INFO] [MainThread] [Main] Max Workers: 10
-2026-02-13 23:07:03,661 [INFO] [MainThread] [ProxyManager] Fetching proxies from https://cdn.jsdelivr.net/gh/proxifly/free-proxy-list@main/proxies/protocols/http/data.txt...
-2026-02-13 23:07:03,790 [INFO] [MainThread] [ProxyManager] Validating 952 proxies against http://example.com...
-2026-02-13 23:07:13,135 [INFO] [MainThread] [ProxyManager] Batch 1: Found 31 working proxies. Total valid: 31
-2026-02-13 23:07:20,363 [INFO] [MainThread] [ProxyManager] Batch 2: Found 28 working proxies. Total valid: 59
-2026-02-13 23:07:20,366 [INFO] [MainThread] [Proxy Setup] Initial setup complete: 59 proxies available.
-2026-02-13 23:07:20,366 [INFO] [MainThread] [Pre-Check] Skipping existing ID check (assuming full scrape).
-2026-02-13 23:07:20,366 [INFO] [MainThread] [List Scrape] Starting parallel list scrape...
-2026-02-13 23:07:28,938 [INFO] [MainThread] [Main] [FATAL] Could not get session to determine total records.

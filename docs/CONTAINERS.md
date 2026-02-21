@@ -8,8 +8,8 @@ This document lists all the containerized services that make up the P2C applicat
 | :--- | :--- | :--- | :--- |
 | `p2cfrontend` | `p2cfrontend:latest` | `8004:80` | The React-based frontend application (Vite). Serves the UI. |
 | `p2cproxy` | `p2cproxy:latest` | `9000:9000` | Node.js middleware. Handles auth, caching, geocoding, and proxies API requests. |
-| `p2capi` | `p2capi:latest` | `8083:8080` | .NET Core Web API. Provides direct SQL access to the backend database. |
-| `orchestrator` | `orchestrator:latest` | `8005:8005` | Python/FastAPI service. Manages data ingestion scripts and proxies. |
+| `p2capi` | `p2capi:latest` | `8083:8083` | .NET Core Web API. Provides direct SQL access to the backend database. |
+| `orchestrator` | `orchestrator:latest` | `8005:8005` | FastAPI/React Orchestrator. Manages data ingestion pipelines, dynamic proxies, and ETL. |
 
 ## Detailed Configuration
 
@@ -38,8 +38,9 @@ This document lists all the containerized services that make up the P2C applicat
 - **Build Context**: `./P2CScripts`
 - **Environment File**: `.env-scripts`
 - **Volumes**:
-    - `orchestrator_db:/data`: Persists the SQLite database used for job history and proxy tracking.
+    - `orchestrator_db:/app/data`: Persists the local SQLite database to track Job Execution History and cached HTTP Proxies.
 - **Role**:
-    - Schedules and runs Python scraper scripts (`scripts/ingestion/`).
-    - maintain a pool of valid proxies for scraping.
-- **Documentation**: [BACKEND_COMPONENTS.md](./BACKEND_COMPONENTS.md#p2cscripts-orchestrator)
+    - Scrapes Dubuque Daily Bulletin, Sex Offender, and Jail registries using dynamic proxy pooling.
+    - Automates Python ETL post-processing for infinite ingestion queue management.
+    - Exposes a 'Big-Tech Light Theme' React Dashboard for real-time log monitoring and pipeline execution.
+- **Documentation**: [P2C_ORCHESTRATOR.md](../P2CScripts/docs/P2C_ORCHESTRATOR.md)
