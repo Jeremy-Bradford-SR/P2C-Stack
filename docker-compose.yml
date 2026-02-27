@@ -45,6 +45,7 @@ services:
       context: ./P2CScripts
       dockerfile: Dockerfile
     image: docker.io/jeremybradfordsr1/orchestrator:latest
+    pull_policy: always
     ports:
       - "8005:8005"
     env_file:
